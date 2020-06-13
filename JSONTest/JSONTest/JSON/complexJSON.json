@@ -4,7 +4,7 @@
   "age": 1,
   "weight": 2.14,
   "items":[{
-    "Rank": 1,
+    "rank": 1,
     "type": "A"
   },{
     "type": "B"
