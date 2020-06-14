@@ -13,6 +13,7 @@ extension GetData {
         if let path = Bundle.main.path(forResource: "complexJSON", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let JsonData = data
                 let jsonData = try JSONDecoder().decode(complexJSON.self, from: data)
                 print("\n---------- [ json ] ----------\n")
                 print(jsonData)
